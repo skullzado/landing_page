@@ -31,25 +31,25 @@ body {
 button {
   outline: none;
   border: none;
-  padding: 6px 32px;
+  padding: 8px 32px;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 700;
 }
 
 .container {
-  background-color: var(--bg-dark);
-  padding: 0 200px;
+  width: 100%;
 }
 
 /* HEADER */
 
 .header {
+  background-color: var(--bg-dark);
   color: var(--color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 16px 200px;
 }
 
 .header h1 {
@@ -62,8 +62,8 @@ button {
   list-style-type: none;
 }
 
-.header ul li {
-  margin: 0 16px;
+.header ul li:not(:last-of-type) {
+  margin-right: 16px;
 }
 
 .header ul li a {
@@ -74,8 +74,10 @@ button {
 
 /* HERO */
 .hero {
+  background-color: var(--bg-dark);
+  color: var(--color);
   display: flex;
-  padding: 128px 0;
+  padding: 128px 200px;
 }
 
 .hero-left,
@@ -109,4 +111,49 @@ button {
   align-items: center;
   background-color: var(--bg-img);
   color: var(--color);
+}
+
+/* FEATURE */
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color);
+  color: var(--bg-dark);
+  padding: 0 200px;
+  margin-bottom: 128px;
+}
+
+.feature h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 64px 0;
+}
+
+.feature-card-container {
+  display: flex;
+  padding: 0 64px;
+  justify-content: space-evenly;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.feature-img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid var(--bg-cta);
+  border-radius: 16px;
+  margin-bottom: 8px;
+}
+
+.feature-caption {
+  max-width: 200px;
+  text-align: center;
 }
