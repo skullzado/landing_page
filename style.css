@@ -31,7 +31,7 @@ body {
 button {
   outline: none;
   border: none;
-  padding: 8px 32px;
+  padding: 4px 32px;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 700;
@@ -97,12 +97,13 @@ button {
 
 .hero-left p {
   font-size: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .hero-left button {
   background-color: var(--bg-cta);
   color: var(--color);
+  font-size: 18px;
 }
 
 .hero-right {
@@ -169,7 +170,7 @@ button {
 .quotes-text {
   margin: auto;
   font-size: 36px;
-  padding: 0 64px;
+  padding: 0 128px;
   font-weight: 300;
 }
 
@@ -177,4 +178,32 @@ button {
   padding: 0 128px;
   text-align: right;
   font-weight: 700;
+  font-size: 24px;
+}
+
+/* CTA */
+.cta {
+  margin: 128px 200px;
+  padding: 64px 128px;
+  display: flex;
+  background-color: var(--bg-cta);
+  color: var(--color);
+  border-radius: 8px;
+}
+
+.cta-text {
+  flex: 1;
+}
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-button button {
+  border: 3px solid var(--color);
+  background-color: transparent;
+  color: var(--color);
+  font-size: 18px;
 }
