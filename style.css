@@ -3,7 +3,7 @@
 :root {
   --bg: white;
   --bg-dark: #1f2937;
-  --bg-section: #e5e7eb;
+  --bg-quote: #e5e7eb;
   --bg-cta: #3882f6;
   --bg-img: gray;
 
@@ -156,4 +156,25 @@ button {
 .feature-caption {
   max-width: 200px;
   text-align: center;
+}
+
+/* QUOTES */
+.quotes {
+  background-color: var(--bg-quote);
+  color: var(--color-dark);
+  padding: 128px 200px;
+  margin: 0 auto;
+}
+
+.quotes-text {
+  margin: auto;
+  font-size: 36px;
+  padding: 0 64px;
+  font-weight: 300;
+}
+
+.quotes-author {
+  padding: 0 128px;
+  text-align: right;
+  font-weight: 700;
 }
